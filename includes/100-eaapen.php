@@ -3,10 +3,10 @@ $eaapen = new eaapen\Eaapen(
     'My App Engine Project',
     [
         'Home' => '/',
-        'Log In' => '/login.php',
-        'Log Out' => '/logout.php'
+        'Log In' => '/login',
+        'Log Out' => '/logout'
     ],
-    '/login.php',
-    '/adminLogin.php',
+    '/login',
+    '/adminLogin',
     'bentonvillek12.org'
 );
