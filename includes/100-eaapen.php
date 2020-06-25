@@ -7,6 +7,5 @@ $eaapen = new eaapen\Eaapen(
         'Log Out' => '/logout'
     ],
     '/login',
-    '/adminLogin',
-    'bentonvillek12.org'
+    '/adminLogin'
 );
