@@ -1,0 +1,9 @@
+runtime: php74
+entrypoint: serve /router.php
+
+handlers:
+  - url: /(.+\.(?:|.|..|[^p]..|.[^h].|..[^p]|....+))$
+    static_files: public/\1
+    upload: public/(.+\.(?:|.|..|[^p]..|.[^h].|..[^p]|....+))$
+  - url: .*
+    script: auto
