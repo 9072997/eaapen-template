@@ -1,2 +1,2 @@
 <?php
-$eaapen->logout();
+eaapen()->logout();
