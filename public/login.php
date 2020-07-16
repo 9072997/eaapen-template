@@ -1,7 +1,12 @@
 <?php
 if (empty($_GET['code'])) {
-    $eaapen->startLogin(false);
+    eaapen()->startLogin(false);
 } else {
-    $eaapen->finishLogin($_GET['code']);
-    $eaapen->redirect('/');
+    try {
+        eaapen()->finishLogin($_GET['code']);
+        eaapen()->redirect('/');
+    } catch (Exception $exception) {
+        echo 'There was an error signing you in.';
+        throw $exception;
+    }
 }
